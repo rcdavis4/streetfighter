@@ -5,23 +5,16 @@
 */
 
 body {
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
   background-color: #000;
   background-image: url('../img/starfield.png');
 }
 
 .main {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 70vh;
-  width: 100vw;
   background-color: #fff;
+  margin-top: 100px;
+  padding-left: 100px;
+  min-width: 1200px;
+  height: 500px;
 }
 
 
@@ -45,20 +38,17 @@ body {
   background-repeat: no-repeat;
 }
 
-/*
+.ryu {
+  float: left;
+}
+
 .ryu-ready,
 .ryu-throwing {
-  display: none;
-}
-*/
-
-.ryu-ready {
   display: none;
 }
 
 .ryu-still {
   background-image: url('../img/ryu-still.png');
-  display: none;
 }
 
 .ryu-ready {
@@ -79,11 +69,11 @@ body {
 .hadouken {
   background-image: url('../img/hadouken.gif');
   width: 156px;
-  height: 120px;
-/*  display: none;*/
+  height: 90px;
+  display: none;
   position: relative;
-  top: -228px;
-  left: 495px;
-/*  float: left;*/
+  top: 167px;
+  left: -212px;
+  float: left;
 }
 
