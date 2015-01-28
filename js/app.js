@@ -5,6 +5,9 @@ $(document).ready(function() {
   .mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
+    // reveal hadouken instruction
+    $('.instruct-ready').hide();
+    $('.instruct-hadouken').show();
   })
 
   // returns ryu to still when cursor leaves ryu area
@@ -14,6 +17,8 @@ $(document).ready(function() {
   })
 
   .mousedown(function() {
+    // hide text bubble
+    $('.instruct-hadouken').hide();
     // hadouken sound
     playHadouken();
     // reveals ryu throwing stance
@@ -34,6 +39,8 @@ $(document).ready(function() {
   .mouseup(function() {
     $('.ryu-throwing').hide();
     $('.ryu-ready').show();
+    // reveal text bubble
+    $('.instruct-coolness').show();
   })
 
   // reveal of cool ryu when letter x is pressed
@@ -45,6 +52,8 @@ $(document).ready(function() {
       playMusic();
       // replaces background image with cityscape image
       $('.main').css('backgroundImage', 'url("../img/skyline.jpg")');
+      // hide text bubble
+      $('.instruct-coolness').hide();
     }
 
   // function for when x button is released
