@@ -19,6 +19,12 @@ body {
   background-size: cover;
 }
 
+.main,
+.instructions,
+.ryu {
+  overflow: hidden;
+}
+
 
 /*
   ========================================
