@@ -1,15 +1,18 @@
 $(document).ready(function() {
   $('.ryu')
+
   // reveals ready stance when hovering near image
   .mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
   })
+
   // returns ryu to still when cursor leaves ryu area
   .mouseleave(function() {
     $('.ryu-ready').hide();
     $('.ryu-still').show();
   })
+
   .mousedown(function() {
     // hadouken sound
     playHadouken();
@@ -26,6 +29,7 @@ $(document).ready(function() {
       }
     );
   })
+
   // returns to ready stance when release click
   .mouseup(function() {
     $('.ryu-throwing').hide();
@@ -42,6 +46,7 @@ $(document).ready(function() {
       // replaces background image with cityscape image
       $('.main').css('backgroundImage', 'url("../img/skyline.jpg")');
     }
+
   // function for when x button is released
   }).keyup(function() {
     if(event.which == 88) {
@@ -54,7 +59,9 @@ $(document).ready(function() {
       $('.main').css('backgroundImage', 'url("../img/anime.png")');
     }
   })
-});
+
+}); // end of document.ready
+
 
 // music and sound functions
 function playHadouken() {

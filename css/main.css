@@ -22,6 +22,45 @@ body {
 
 /*
   ========================================
+  INSTRUCTIONS
+  ========================================
+*/
+
+.instructions {
+  position: relative;
+  float: right;
+  top: 10px;
+  right: 780px;
+  width: 335px;
+}
+
+.instruct-ready,
+.instruct-hadouken,
+.instruct-coolness {
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.instruct-hadouken,
+.instruct-coolness {
+  display: none;
+}
+
+.instruct-ready {
+  background-image: url('../img/instruct-ready.png');
+}
+
+.instruct-hadouken {
+  background-image: url('../img/instruct-hadouken.png');
+}
+
+.instruct-coolness {
+  background-image: url('../img/instruct-coolness.png');
+}
+
+
+/*
+  ========================================
   RYU
   ========================================
 */
@@ -48,7 +87,8 @@ body {
 
 .ryu-ready,
 .ryu-throwing,
-.ryu-cool {
+.ryu-cool,
+.hadouken {
   display: none;
 }
 
