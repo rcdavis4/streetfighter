@@ -51,7 +51,7 @@ $(document).ready(function() {
       // cue suave music
       playMusic();
       // replaces background image with cityscape image
-      $('.main').css({'backgroundImage', 'url(../img/skyline.jpg)'});
+      $('.main').css('backgroundImage', 'url(../img/skyline.jpg)');
       // hide text bubble
       $('.instruct-coolness').hide();
     }
@@ -65,7 +65,7 @@ $(document).ready(function() {
       $('#suave-music')[0].pause();
       $('#suave-music')[0].load();
       // background image returns to original
-      $('.main').css({'backgroundImage', 'url(../img/anime.png)'});
+      $('.main').css('backgroundImage', 'url(../img/anime.png)');
     }
   })
 
