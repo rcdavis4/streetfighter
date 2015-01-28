@@ -1,5 +1,17 @@
 /*
   ========================================
+  FONTS
+  ========================================
+*/
+
+@font-face {
+  font-family: '8bit';
+  src: url('../font/PressStart2P.ttf') format('truetype');
+}
+
+
+/*
+  ========================================
   GENERAL
   ========================================
 */
@@ -35,33 +47,26 @@ body {
 .instructions {
   position: relative;
   float: right;
-  top: 15px;
-  right: 620px;
-  width: 335px;
+  top: 55px;
+  right: 100px;
+  padding: 30px 0;
 }
 
 .instruct-ready,
 .instruct-hadouken,
 .instruct-coolness {
-  height: 60px;
-  background-repeat: no-repeat;
-}
-
-.instruct-hadouken,
-.instruct-coolness {
-  display: none;
-}
-
-.instruct-ready {
-  background-image: url('../img/instruct-ready.png');
+  font-family: '8bit', Fallback, sans-serif;
+  width: auto;
+  font-size: 0.8em;
+  padding: 30px 10px;
 }
 
 .instruct-hadouken {
-  background-image: url('../img/instruct-hadouken.png');
+  margin-left: 50px;
 }
 
 .instruct-coolness {
-  background-image: url('../img/instruct-coolness.png');
+  margin-left: 100px;
 }
 
 
@@ -75,7 +80,7 @@ body {
 .ryu-ready,
 .ryu-throwing,
 .ryu-cool {
-  width: 659px;
+  width: 600px;
   height: 494px;
 }
 
